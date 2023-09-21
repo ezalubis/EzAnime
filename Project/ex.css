@@ -1,0 +1,162 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+header{
+  background-color:transparent;
+  font-weight: bold;
+  padding: 10px 10px;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.6),
+  -10px -10px 10px rgba(0,0,0, 0.6);
+  position: sticky;
+  top:0;
+    z-index: 100000;
+  }
+input[type = "checkbox"], .hamburger{
+  display: none;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  min-height: 60px;
+  align-items: center;
+  background-color: 	#FF00FF;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+nav .left-side .nav-links{
+  display: flex;
+}
+nav .left-side .nav-links a{
+  display: block;
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+}
+nav .left-side .nav-links{
+  color: white;
+  padding: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+nav .left-side #home:hover{
+  color: rgb(54, 243, 202);
+  text-shadow: 0 0 5px #03e9f4,  0 0 25px #03e9f4, 0 0 50px #03e9f4,  0 0 100px #03e9f4;
+}
+nav .left-side #learn:hover{
+  color: rgb(54, 243, 202);
+  text-shadow: 0 0 5px #03e9f4,  0 0 25px #03e9f4,  0 0 50px #03e9f4,  0 0 100px #03e9f4;
+}
+nav .left-side #profil:hover{
+  color: rgb(54, 243, 202);
+  text-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4,  0 0 50px #03e9f4,  0 0 100px #03e9f4;
+}
+@media (max-width: 700px){
+  nav .left-side .nav-links{
+    display: none;
+  }
+  nav{
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  nav .right-side{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: space-between;
+  }
+  nav .right-side h1{
+    color: white;
+  }
+  nav .right-side .hamburger{
+    display: block;
+    padding: 20px;
+  }
+  nav input[type = "checkbox"]{
+    display: block;
+    transform: scale(2);
+    position: absolute;
+    margin-left: 33px;
+    margin-top: -43px;
+    opacity: 0;
+    cursor: pointer;
+  }
+  nav input[type = "checkbox"]:checked ~ .nav-links{
+    display: block;
+  }
+  nav .right-side .hamburger span{
+   display: block;
+    height: 3px;
+    width: 25px;
+    margin: 6.5px;
+    background: white;
+    }
+}
+main{
+  background-image: url("tugu.jpeg");
+}
+.wrap{
+  padding-right: 15px;
+}   
+#box{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap:5px;
+}
+.card{
+  width: 25vw;
+  height: auto;
+  padding:10px;
+  border-radius: 5px;
+  padding: 24px;
+  filter: blur(2px);
+}
+.card h3{
+  text-align: center;
+  padding-top: 0.5%;
+}
+.card b{
+  text-align: center;
+}
+iframe{
+  width:20vw;
+  height: 15vh;
+  margin: 10px;
+  cursor: pointer;
+}
+.card:hover{
+  background-color: #FF00FF;
+  color: #fff;
+  box-shadow: 0px 5px 8px rgba(0,0,0,.3);
+  transform: scale(.97);
+  filter: blur(0px);
+  cursor: pointer;
+}  
+footer {
+  background-color: #222;
+  color: #fff;
+  font-size: 14px;
+  bottom: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 999;
+}
+.link a{
+  color: #FF00FF;
+}
+a:hover{
+  color: #222;
+  text-decoration: underline;
+}
+.link{
+  text-align: center;
+  text-decoration: none;
+  margin-top: 10%;
+}

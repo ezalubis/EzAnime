@@ -1,0 +1,219 @@
+*{
+  margin: 0px;
+ padding: 0px;
+}
+header{
+  background-color:transparent;
+  font-weight: bold;
+  padding: 10px 10px;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.6),
+  -10px -10px 10px rgba(0,0,0, 0.6);
+  position: sticky;
+  top:0;
+  z-index: 100000;
+}
+input[type = "checkbox"], .hamburger{
+  display: none;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  min-height: 60px;
+  align-items: center;
+  background-color: 	#FF00FF;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+nav .left-side .nav-links{
+  display: flex;
+}
+nav .left-side .nav-links a{
+  display: block;
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+}
+nav .left-side .nav-links{
+  color: white;
+  padding: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+nav .left-side #home:hover{
+  color: rgb(54, 243, 202);
+  text-shadow: 0 0 5px #03e9f4,  0 0 25px #03e9f4,  0 0 50px #03e9f4,  0 0 100px #03e9f4;
+}
+nav .left-side #learn:hover{
+  color: rgb(54, 243, 202);
+  text-shadow: 0 0 5px #03e9f4,  0 0 25px #03e9f4,  0 0 50px #03e9f4,  0 0 100px #03e9f4;
+}
+nav .left-side #profil:hover{
+  color: rgb(54, 243, 202);
+  text-shadow: 0 0 5px #03e9f4,  0 0 25px #03e9f4,  0 0 50px #03e9f4,  0 0 100px #03e9f4;
+}
+@media (max-width: 700px){
+  nav .left-side .nav-links{
+    display: none;
+  }
+  nav{
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  nav .right-side{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: space-between;
+  }
+  nav .right-side h1{
+    color: white;
+  }
+  nav .right-side .hamburger{
+    display: block;
+    padding: 20px;
+  }
+  nav input[type = "checkbox"]{
+    display: block;
+    transform: scale(2);
+    position: absolute;
+    margin-left: 33px;
+    margin-top: -43px;
+    opacity: 0;
+    cursor: pointer;
+  }
+  nav input[type = "checkbox"]:checked ~ .nav-links{
+    display: block;
+  }
+  nav .right-side .hamburger span{
+    display: block;
+    height: 3px;
+    width: 25px;
+    margin: 6.5px;
+    background: white;
+  }
+}
+
+  /* main */
+main{
+  background-color: #D8BFD8;
+  padding: 0px;
+  margin:0px;
+  width:100%;
+  height:100%;
+  font-family: 'Lato';
+}
+.wrapper{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  width:100%;
+  max-width: 650px;
+  height:auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap:1em;
+  justify-content: center;
+}
+.wrap{
+  padding-right: 15px;
+}
+.card h1{
+  text-align: center;
+}
+.card{
+  flex: 1;
+  flex-basis: 300px;
+  flex-grow: 0;
+  height: 60vh;
+  background: #fff;
+  border: 2px solid #FF00FF;
+  border-radius: 5px;
+  box-shadow: 0px 4px 7px rgba(0,0,0,.5);
+  cursor: pointer;
+  transition: all .5s cubic-bezier(.8,.5,.2,1.4);
+  overflow: hidden;
+  position: relative;
+}
+.card img{
+  width: 100%;
+  height:100%;
+  transition: all .5s cubic-bezier(.8,.5,.2,1.4);
+}
+.descriptions{
+  position: absolute;
+  top:0px;
+  left:0px;
+  background-color: rgba(255,255,255,.7);
+  width:100%;
+  height:100%;
+  transition: all .7s ease-in-out;
+  padding: 20px;
+  box-sizing: border-box;
+  clip-path: circle(0% at 100% 100%);
+}
+.card:hover .descriptions{
+  left:0px;
+  transition: all .7s ease-in-out;
+  clip-path: circle(75%);
+}
+.card:hover{
+  transition: all .5s cubic-bezier(.8,.5,.2,1.4);
+  box-shadow: 0px 2px 3px rgba(0,0,0,.3);
+  transform: scale(.97);
+}
+.card:hover img{
+  transition: all .5s cubic-bezier(.8,.5,.2,1.4);
+  transform: scale(1.6) rotate(20deg);
+  filter: blur(3px);
+}
+.card h1{
+  color: #ff3838;
+  letter-spacing: 1px;
+  margin: 25%;
+}
+.card p{
+  line-height: 24px;
+  height: 70%;
+}
+.card button{
+  width: 35%;
+  height: 10%;
+  cursor: pointer;
+  border-style: none;
+  background-color: #ff3838;
+  color:#fff;
+  font-size: 15px;
+  outline: none;
+  box-shadow: 0px 2px 3px rgba(0,0,0,.4);
+  transition: all .5s ease-in-out;
+}
+.card button:hover{
+  transform: scale(.95) translateX(-5px);
+  transition: all .5s ease-in-out;
+}
+@media (max-width: 625px){
+  .wrapper{
+    flex-wrap: nowrap;
+    gap:-50em;
+  }
+  .card h1{
+    margin: 5%;
+  }
+}
+  
+  /*  footer   */
+footer {
+  background-color: #222;
+  color: #fff;
+  font-size: 14px;
+  bottom: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 999;
+} 

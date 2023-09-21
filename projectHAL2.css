@@ -1,0 +1,39 @@
+body{
+    background: url(blog2.png);
+    color: black;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+}
+.uch{
+    background: url(blog.png);
+    color: aliceblue;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+}
+#cont{
+    max-width: 1100px;
+    width: 100%;
+    padding: 40px 15px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: center;
+}
+.head{
+    overflow: hidden;
+}
+.head img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+@media screen  and (max-width: 768px){
+    .div1{
+        grid-template-columns: 1fr 1fr;
+    }
+    .div1 img{
+        height: 170px;
+    }
+}

@@ -1,0 +1,210 @@
+
+header {
+    display: flex;
+    padding: 0px;
+    height: 100px;
+    top: 0;
+}
+body{
+    background: url(blog2.png);
+    color:black;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+}
+.uch{
+    background: url(blog.png);
+    color: white;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+}
+.slide{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 80%;
+}
+#dragonball{
+    color: rgb(3, 0, 0);
+    padding: 0px 10vw;
+    position: absolute;
+    top: 25%;
+    text-align: center;     
+    font-size: 4vw;
+    text-shadow: 5px 5px 10px black;
+}
+#onepiece{
+    color: rgb(3, 0, 0);
+    padding: 0px 10vw;
+    position: absolute;
+    top: 10%;
+    text-align: center;     
+    font-size: 4vw;
+    text-shadow: 5px 5px 10px black;
+}
+#saitama{
+    color: red;
+    padding: 0px 10vw;
+    position: absolute;
+    top: 10%;
+    text-align: center;     
+    font-size: 4vw;
+    text-shadow: 5px 5px 10px black;
+}
+#naruto{
+    color: black;
+    padding: 0px 40vw;
+    position: absolute;
+    text-align: center;     
+    font-size: 4vw;
+    text-shadow: 5px 5px 10px black;
+}
+#aot{
+    color: black;
+    padding-left: 65vw;
+    position: absolute;
+    text-align: center;     
+    font-size: 3vw;
+    text-shadow: 5px 5px 10px black;
+}
+.textaot{
+    color: black;
+    padding-left: 65vw;
+    top: 20%;
+    position: absolute;
+    text-align: start;     
+    font-size: 1.5625vw;
+    text-shadow: 5px 5px 10px black;
+}
+.textnaruto{
+    color: black;
+    padding:  10vw 25vw;
+    position: absolute;
+    text-align: start;     
+    font-size: 1.5625vw;
+    text-shadow: 5px 5px 10px black;
+}
+.textsaitama{
+    color: red;
+    padding:  0px 30px;
+    position: absolute;
+    top: 35%;
+    text-align: start;     
+    font-size: 1.5625vw;
+    text-shadow: 5px 5px 10px black;
+}
+.textpiece{
+    color: black;
+    padding:  0px 30px;
+    position: absolute;
+    top: 35%;
+    text-align: start;     
+    font-size: 1.5625vw;
+    text-shadow: 5px 5px 10px black;
+}
+.textball{
+    color: white;
+    padding:  0px 30px;
+    position: absolute;
+    top: 50%;
+    text-align: start;     
+    font-size: 1.5625vw;
+    text-shadow: 5px 5px 10px black;
+}
+.slide figure div{
+    width: 20%;
+    float: left;
+}
+.slide figure img{
+    width: 100%;
+    float: left;
+}
+.slide figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slidy infinite;
+}
+@keyframes slidy {
+    0%{left: 0%;}
+    20%{left: -100%;}
+    40%{left: -200%;}
+    60%{left: -300%;}
+    80%{left: -400%;}
+    100%{left: 0%;}
+}
+.slide #header-right{
+    width: 40px;
+    margin-top: -30px;
+    margin-left: 78.125vw;
+}
+.slide input[type="checkbox"]{
+    position: relative;
+    width: 40px;
+    height: 20px;
+    appearance: none;
+    background-color: #434343;
+    outline: none;
+    border-radius: 10px;
+    transition: .5 ease;
+    cursor: pointer;
+}
+.slide input[type="checkbox"]:checked{
+    background-color: #3664ff;
+}
+
+.slide input[type="checkbox"]::before{
+    content: ' ';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #fcfcfc;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: .5s ease;
+}
+.slide input[type="checkbox"]:checked::before{
+    transform: translateX(20px);
+}
+@media screen and (max-height:667px){
+    .slide footer{
+        margin-bottom: 0px;
+    }
+}
+h1{
+    text-align: center;
+    font-size: 5vw;
+}
+#box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    justify-content: stretch;
+}
+
+#box >* {
+    text-align: center;
+    flex-basis: 20rem;
+    flex-shrink: 0;
+}
+
+#box.div1 {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid;
+}
+#box .div1 > .div2 {
+    flex-basis: 25rem;
+    flex-shrink: 0;
+    overflow-y: hidden;
+}
+#box .div1 > .isi1{
+    font-size: 10px;
+}
+a{
+    font-size: 1.5vw;
+}

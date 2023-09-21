@@ -1,0 +1,71 @@
+body{
+    background-image: url(blog2.png);
+    color: black;
+    /* background-repeat: no-repeat; */
+    /* background-attachment: fixed;  */
+    /* background-size: 100% 100%; */
+}
+.uch{
+    background-image: url(blog.png);
+    color: white;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+}
+.div1{
+    margin-top: 10px;
+    text-align: center;
+    border-radius:90px;
+}
+#box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    justify-content: stretch;
+}
+
+#box >* {
+    flex-basis: 20rem;
+    flex-shrink: 0;
+}
+
+#box.div1 {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid;
+}
+#box .div1 > .div2 {
+    flex-basis: 25rem;
+    flex-shrink: 0;
+    overflow-y: hidden;
+}
+#box .div1 > .isi1{
+    font-size: 10px;
+}
+#box2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    justify-content: stretch;
+}
+
+#box2 >* {
+    flex-basis: 20rem;
+    flex-shrink: 0;
+}
+
+#box2.div1 {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid;
+}
+#box2 .div1 > .div2 {
+    flex-basis: 25rem;
+    flex-shrink: 0;
+    overflow-y: hidden;
+}
+#box2 .div1 > .isi1{
+    font-size: 10px;
+}

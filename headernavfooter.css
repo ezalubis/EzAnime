@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    padding: 0px;
+    height: 100px;
+    top: 0;
+}
+
+.uch {
+    background: url(blog.png);
+}
+
+#header {
+    width: 100%;
+    padding-left: 10vw;
+}
+
+#header-logo1 {
+    padding-top: 10px;
+    color: black;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+}
+
+#header-logo1 img {
+    width: 60px;
+    height: 60px;
+}
+
+#header-logo2 {
+    color: red;
+    font-size: 6 0px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+}
+
+#header-right {
+    width: 40px;
+    margin-top: -30px;
+    margin-left: 78.125vw;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: rgb(216, 133, 147);
+}
+
+nav {
+    display: flex;
+    padding: 20px 0;
+    color: black;
+    position: sticky;
+    justify-content: center;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 60%;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    border: black solid 5px;
+    border-radius: 10px;
+    background-color: black;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+@media screen and (max-width:768px) {
+    nav ul {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    nav ul li {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:616px) {
+    nav ul li {
+        font-size: 11px;
+    }
+    #header-logo1 {
+        margin-left: -40px;
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    nav ul li {
+        font-size: 7px;
+    }
+}
+
+.footer {
+    text-align: center;
+    color: white;
+    background: #191919;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    font-family: sans-serif;
+}
+
+.sosmed img {
+    height: 50px;
+}
+
+.sosmed ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.sosmed li {
+    display: inline-block;
+    padding: 10px;
+}
+
+input[type="checkbox"] {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    appearance: none;
+    background-color: #434343;
+    outline: none;
+    border-radius: 10px;
+    transition: .5 ease;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #3664ff;
+}
+
+input[type="checkbox"]::before {
+    content: ' ';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #fcfcfc;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: .5s ease;
+}
+
+input[type="checkbox"]:checked::before {
+    transform: translateX(20px);
+}
